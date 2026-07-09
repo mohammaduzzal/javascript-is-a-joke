@@ -103,8 +103,8 @@ function operator(a,b,callback){
 const add = (x,y) => x+y
 const subtract = (x,y) => x-y
 
-// console.log(operator(10,5,add))
-// console.log(operator(10,5,subtract))
+// 
+
 
 
 // ⭐ Interview Secret
