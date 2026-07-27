@@ -274,23 +274,24 @@
 // ✅ catch → Error Handle করে।
 
 
-async function demo() {
-    try {
-        console.log("A");
+// async function demo() {
+//     try {
+//         console.log("A");
 
-        await Promise.reject("Error");
+//         await Promise.reject("Error");
 
-        console.log("B");
+//         console.log("B");
 
-    } catch (err) {
-        console.log(err);
-    }
+//     } catch (err) {
+//         console.log(err);
+//     }
 
-    console.log("C");
-}
+//     console.log("C");
+// }
 
-demo();
+// demo();
 
-console.log("D");  
+// console.log("D");  
 
-//a,d,error,c  console.log("B"); ❌ Never runs. Because once the promise rejects, control jumps directly to the catch block.
+// //a,d,error,c  console.log("B"); ❌ Never runs. Because once the promise rejects, control jumps directly to the catch block.
+
