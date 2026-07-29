@@ -159,3 +159,5 @@ const double = createMultiplier(2);
 
 console.log(double(5));
 console.log(double(10));
+
+// ✅ Closure Variable-এর Reference ধরে রাখে, Copy নয়।

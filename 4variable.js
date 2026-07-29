@@ -22,3 +22,7 @@
 // const country = "Bangladesh";
 // country = "Japan";
 // console.log(country); //typeError
+
+
+// var আর let দিয়ে Output আলাদা কেন?
+// var পুরো Loop-এর জন্য একটি Variable ব্যবহার করে, কিন্তু let প্রতিটি Iteration-এর জন্য নতুন Variable তৈরি করে।

@@ -358,10 +358,105 @@
 // }
 
 
+// Difference?
+
+// innerText
+// শুধু Text বসায়।
+// HTML Tag Render করে না।
+
+// innerHTML
+// HTML Parse করে।
+// Tag Render করে।
+
+// মনে রাখবে এই তিনটি Rule:
+// ✅ innerText → শুধু Text
+// ✅ innerHTML → HTML Render করে
+// ✅ appendChild() → Element-কে DOM-এ যোগ করে
 
 
 
+// ================================================================
+// Topic: Fetch API Interview Questions & Best Practices
+// আজ শিখব Professional Developer কীভাবে Fetch ব্যবহার করে।
 
+
+// ⭐ Best Practice 
+
+// ❌ Bad Code
+// const response = await fetch(url);
+// const data = await response.json();
+// console.log(data);
+// এখানে যদি Internet না থাকে?
+// অথবা Server Down হয়?
+// 💥 Program Crash করতে পারে।
+
+// ✅ Good Code
+// try {
+
+//     const response = await fetch(url);
+
+//     const data = await response.json();
+
+//     console.log(data);
+
+// } catch (error) {
+
+//     console.log(error.message);
+
+// }
+
+
+// // 
+// ⭐ Best Practice 3
+
+// Always Hide Loading
+// try {
+
+// } catch {
+
+// } finally {
+
+//     loading.style.display = "none";
+
+// }
+
+// ⭐ Best Practice 4
+
+// Separate Functions
+
+// ❌ Bad
+// async function app() {
+
+//     fetch(...)
+
+//     render()
+
+//     search()
+
+//     delete()
+
+// }
+
+// ✅ Better
+// async function getUsers() {
+
+// }
+
+// function displayUsers() {
+
+// }
+
+// function searchUsers() {
+
+// }
+// এক Function = এক কাজ।
+// এটাকে বলে Single Responsibility Principle।
+
+// ⭐ Best Practice 5
+
+// Clear Previous Data
+// container.innerHTML = "";
+// নতুন Data দেখানোর আগে পুরনো Data মুছে ফেলো।
 
 
 
