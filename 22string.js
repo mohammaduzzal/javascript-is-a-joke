@@ -197,3 +197,117 @@
 
 
 // ===================================================================
+// 🤔 lastIndexOf() কী?
+// indexOf() প্রথম Match-এর Index দেয়।
+// lastIndexOf() শেষ Match-এর Index দেয়। যদি না পাওয়া যায়? -1 return 
+
+// const text = "banana";
+// console.log(text.indexOf("a"));
+// console.log(text.lastIndexOf("a"));
+
+
+// includes() কী?
+// এটি Check করে কোনো String-এর মধ্যে নির্দিষ্ট Text আছে কি না। return true or false .Case Sensitive
+
+// const language = "JavaScript";
+// console.log(language.includes("Script"));
+
+// const language = "JavaScript";
+// console.log(language.startsWith("J"));
+
+
+// endsWith()
+// এটি Check করে String কোন Text দিয়ে শেষ হয়েছে।
+
+
+// const language = "JavaScript";
+// console.log(language.endsWith("pt"));
+
+
+// Method	                       Return করে
+// indexOf()	                   Index Number
+// lastIndexOf()	               Last Index Number
+// includes()	                   Boolean
+// startsWith()	               Boolean
+// endsWith()	                   Boolean
+
+
+
+// const word = "programming";
+// console.log(word.indexOf("m"));
+// console.log(word.lastIndexOf("m"));
+
+
+// const email = "bright@gmail.com";
+// console.log(email.includes("@"));
+// console.log(email.startsWith("bright"));
+// console.log(email.endsWith(".com"));
+
+
+// ========================================================
+// slice() কী?
+// slice() একটি String-এর নির্দিষ্ট অংশ (portion) কেটে নতুন String Return করে।
+// 👉 Original String পরিবর্তন করে না।
+// syntex = string(start,end)
+// start = কোথা থেকে শুরু হবে।
+// end = কোথায় শেষ হবে (এই Index Include হবে না)।
+// যদি end না দাও,
+// তাহলে String-এর শেষ পর্যন্ত কেটে নেবে।
+// const text = "JavaScript";
+// console.log(text.slice(0,4));
+// console.log(text.slice(4));
+
+// Negative Index (সবচেয়ে গুরুত্বপূর্ণ)
+// const text = "JavaScript";
+// console.log(text.slice(-5));
+// Negative Index কীভাবে কাজ করে?
+// J  a  v  a  S  c  r  i  p  t
+// 0  1  2  3  4  5  6  7  8  9
+
+// -10 ................. -1
+
+// অর্থাৎ
+// -1 = t
+// -2 = p
+// -3 = i
+
+
+// substring()
+// substring()-ও String-এর অংশ কেটে দেয়।
+// const text = "JavaScript";
+// console.log(text.substring(0,4));
+// দেখতে slice()-এর মতোই।
+// কিন্তু পার্থক্য কোথায়?
+// ⭐ Negative Index Support করে না।
+// console.log(text.substring(-1)); //javscript কেন? -1 takes its as 0
+// আরেকটা গুরুত্বপূর্ণ বিষয়
+// যদি
+// substring(7,2)
+// লেখো,
+// JavaScript নিজেই Swap করে নেয়।
+// মানে
+// substring(2,7)
+
+// console.log(text.substring(7,2)); //vaScr
+
+// const country = "Bangladesh";
+// console.log(country.slice(0,6));
+// console.log(country.slice(6));
+
+// const language = "JavaScript";
+// console.log(language.slice(-6));
+// console.log(language.substring(0,4));
+
+
+// const text = "JavaScript";
+
+// console.log(text.slice(4, 4)); // ""
+// console.log(text.substring(4, 4)); // ""
+
+// const text = "JavaScript";
+
+// console.log(text.slice(7, 2)); //""
+// console.log(text.substring(7, 2)); //vaScr
+
+// slice() Start > End হলে Empty String দেয়।
+// substring() Start এবং End Swap করে।
