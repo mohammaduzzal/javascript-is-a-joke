@@ -311,3 +311,123 @@
 
 // slice() Start > End হলে Empty String দেয়।
 // substring() Start এবং End Swap করে।
+
+// =============================================
+// replace() কী?
+// replace() String-এর মধ্যে কোনো নির্দিষ্ট অংশ খুঁজে প্রথম যে Match পায় সেটাকে পরিবর্তন করে।
+// syntax 
+// string.replace(searchValue, newValue)
+
+// const text = "I like JavaScript";
+// const result = text.replace("JavaScript", "react")
+// console.log(result);
+
+
+// গুরুত্বপূর্ণ বিষয়
+// replace() Original String পরিবর্তন করে না।
+// কারণ String immutable।
+
+// const text = "I like JavaScript";
+// text.replace("JavaScript", "React");
+// console.log(text);
+
+// replace() শুধু প্রথম Match পরিবর্তন করে
+// এটা খুব গুরুত্বপূর্ণ।
+// const text = "apple apple apple";
+// console.log(text.replace("apple", "orange"));
+
+// replaceAll()
+// যদি String-এর সব Match পরিবর্তন করতে চাও, তাহলে replaceAll() ব্যবহার করতে পারো।
+// const text = "apple apple apple";
+// console.log(text.replaceAll("apple", "orange")); //orange orange orange
+
+// 5️⃣ Regular Expression দিয়ে replace()
+// const text = "apple apple apple";
+// console.log(text.replace(/apple/g, "orange")); //orange orange orange
+// এর মধ্যে g মানে global।
+// অর্থাৎ সব Match খুঁজবে।
+
+// const text = "JavaScript is powerful. JavaScript is popular.";
+// const newText = text.replaceAll("JavaScript", "React")
+// console.log(newText);
+
+// replace() এবং replaceAll() দুটোই Original String পরিবর্তন করে না।
+
+
+// =========================================================================
+
+// split() কী?
+// split() একটি String-কে ভাগ করে Array বানায়।
+
+// syntax : string.split(separator) এখানে separator বলে দেয় কোথায় String-টা ভাগ হবে।
+// const text = "I love JavaScript";
+// const result = text.split(" ")
+// console.log(result); [ 'I', 'love', 'JavaScript' ]
+// যেখানে যেখানে space আছে, সেখানে String ভাগ হবে।
+
+// Character অনুযায়ী Split
+// const word = "JavaScript";
+// console.log(word.split("")); ["J", "a", "v", "a", "S", "c", "r", "i", "p", "t"]
+// এখানে "" মানে:
+// প্রতিটি Character আলাদা করো।
+
+// Comma দিয়ে Split
+// const fruits = "apple,banana,mango";
+// const result = fruits.split(",")
+// console.log(result); ["apple", "banana", "mango"]
+
+// split() Original String পরিবর্তন করে না
+
+// split()-এর একটা গুরুত্বপূর্ণ বিষয়
+// যদি কোনো separator না পাওয়া যায়:
+// const text = "JavaScript";
+// console.log(text.split("-")); ["JavaScript"] কারণ "JavaScript"-এর মধ্যে - নেই।
+
+
+
+
+
+// join() কী?
+// এখন উল্টো কাজ করি।
+// join() একটি Array-কে String বানায়।
+// syntax : array.join(separator)
+
+// const fruits = ["apple", "banana", "mango"];
+// const result = fruits.join(" ");
+// console.log(result);  apple banana mango
+
+
+
+// split() এবং join() একসাথে
+// const text = "I love JavaScript";
+
+// const result = text.split(" ").join(" ")
+// console.log(result);
+
+// join()-এর separator
+// const names = ["Bright", "Uzzal", "Rahim"];
+// console.log(names.join(" "));
+// console.log(names.join(","));
+// console.log(names.join("-"));
+// console.log(names.join()); //Default separator হলো: ,
+
+
+// Real-Life Example
+// ধরো তোমার কাছে আছে: তুমি Words count করতে চাও।
+// const sentence = "JavaScript is very powerful";
+// const word = sentence.split(" ")
+// console.log(word);
+// console.log(word.length);
+
+
+// একটা sentence বানাতে চাই:
+// const words = ["I", "love", "JavaScript"];
+// const sentence = words.join(" ");
+// console.log(sentence);
+
+// Method	কাজ
+// split()	String → Array
+// join()	Array → String
+
+
+ 
