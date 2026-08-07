@@ -429,5 +429,51 @@
 // split()	String → Array
 // join()	Array → String
 
+// ==========================================================
 
+// trim() কী?
+// trim() String-এর শুরুর (leading) এবং শেষের (trailing) সব extra space মুছে দেয়।
+// 👉 মাঝখানের (middle) space মুছে দেয় না।
+
+// const text = "   JavaScript   ";
+// console.log(text.trim());
+
+// Original String পরিবর্তন হয়?
+// না।
+
+// কারণ String immutable।
+
+// trimEnd()
+// এটি শুধু শেষের Space Remove করে।
  
+
+// repeat() কী?
+// repeat() একটি String-কে নির্দিষ্ট সংখ্যক বার Repeat করে।
+
+// string.repeat(count)
+
+// const text = "Hi ";
+// console.log(text.repeat(3));
+
+// repeat(0)
+// console.log("Hello".repeat(0)); //""
+
+
+// Negative Number দিলে?
+// console.log("Hi".repeat(-1));
+// RangeError
+
+
+// Backticks
+// ` `
+
+// ${} কী?  এটাকে বলে Interpolation।
+
+// const text = "apple,banana,mango";
+
+// console.log(text.split(","));
+
+// const word = "JavaScript";
+// console.log(word.split(""));
+// console.log(word.split("").reverse());
+// console.log(word.split("").reverse().join(""));
