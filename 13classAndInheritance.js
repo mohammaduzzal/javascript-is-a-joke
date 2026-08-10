@@ -263,3 +263,36 @@
 // }
 
 // In a derived class, super() must be called before using this. Otherwise, JavaScript throws a ReferenceError because the parent constructor hasn't initialized the object yet.
+
+
+// =============================================================================
+// Class = Object তৈরির blueprint
+
+// this.name
+//    ↑
+// object-এর property
+
+// name
+//    ↑
+// constructor-এর parameter
+
+
+// কিন্তু যদি object তৈরি করার সময় data initialize করতে চাও, তখন নিজের constructor লিখবে।
+
+// Constructor-এর Default Parameter
+
+// এখানেও normal JavaScript-এর মতো default parameter ব্যবহার করতে পারো।
+
+// class Person {
+//     constructor(name = "Unknown", age = 0) {
+//         this.name = name;
+//         this.age = age;
+//     }
+// }
+
+// const person1 = new Person();
+
+// console.log(person1);
+
+// Class Method কী?
+// Class-এর ভিতরে থাকা function-কে method বলা হয়।
