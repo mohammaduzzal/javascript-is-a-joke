@@ -424,11 +424,11 @@
 // Event Delegation
 
 // ====================================
-preventDefault() কী?
+// preventDefault() কী?
 
-সহজ বাংলায়:
+// সহজ বাংলায়:
 
-Browser কোনো element-এর জন্য যে default কাজ করে, সেই default কাজ বন্ধ করতে preventDefault() ব্যবহার করা হয়।
+// Browser কোনো element-এর জন্য যে default কাজ করে, সেই default কাজ বন্ধ করতে preventDefault() ব্যবহার করা হয়।
 
 
 
@@ -471,8 +471,8 @@ Browser কোনো element-এর জন্য যে default কাজ কর
 // 🔹 Link navigation
 
 
-stopPropagation() কী?
+// stopPropagation() কী?
 
-সহজ বাংলায়:
+// সহজ বাংলায়:
 
-একটি event যেন parent বা অন্য ancestor element-এর দিকে আর propagate না করে, সেটা বন্ধ করার জন্য stopPropagation() ব্যবহার করি।
+// একটি event যেন parent বা অন্য ancestor element-এর দিকে আর propagate না করে, সেটা বন্ধ করার জন্য stopPropagation() ব্যবহার করি।
