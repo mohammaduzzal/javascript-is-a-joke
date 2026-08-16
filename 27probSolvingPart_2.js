@@ -129,7 +129,89 @@ return count
 
 console.log(countWords("I love JavaScript"));
 console.log(countWords("I  love   JavaScript"));
-console.log(countWords(""));
+console.log(countWords(" "));
 
 // if (letter !== " " && inWord === false)
 // Characterটা space নয় এবং আমরা কোনো word-এর ভিতরে নেই → তাহলে নতুন word শুরু হয়েছে।
+
+
+
+
+
+
+// recap part 1+2
+// palindrome// Reverse String // Count Words // Count Vowels
+
+
+// function reverseStr(str){
+//     let reverse = "";
+//     for(const letter of str){
+//         reverse = letter + reverse
+//     }
+//     return reverse
+// }
+// console.log(reverseStr("bright"));
+
+
+// function countVowel(str){
+//     const vowels = "aeiouAEIOU";
+//     let count = 0;
+//     for(const letter of str){
+//         if(vowels.includes(letter)){
+//             count ++;
+//         }
+//     }
+//     return count;
+// }
+
+// console.log(countVowel("i love javascript and python"));
+
+
+
+
+// function palindrome(str){
+//     let reverse = "";
+//     for(const letter of str){
+//         reverse = letter + reverse
+//     }
+
+//     return reverse === str
+// }
+// console.log(palindrome("bright"));
+// console.log(palindrome("madam"));
+
+
+
+
+// function getVowels(str){
+//     const vowels = "aeiouAEIOU";
+//     let vowelsArray = [];
+
+//     for(const letter of str){
+//         if(vowels.includes(letter)){
+//             vowelsArray.push(letter)
+//         }
+//     }
+//     return vowelsArray
+// }
+// console.log(getVowels("i love javascript and python and got fucked by bangladdesh"));
+
+
+
+// function countWordss(str){
+//     let count = 0
+//     let inWord = false
+//     for(const letter of str){
+//         if(letter !== " " && inWord === false){
+//             count ++
+//             inWord = true
+//         }else if(letter === " "){
+//             inWord = false
+//         }
+//     }
+//     return count
+
+// }
+
+// console.log(countWordss("i love getting fucked by our  country bitch "));
+// console.log(countWordss(" "));
